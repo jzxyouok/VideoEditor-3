@@ -11,7 +11,7 @@ import UIKit
 class FirstViewController: UIViewController {
 
     @IBOutlet weak var textFieldButton: UIButton!
-    @IBOutlet weak var dataView: UIScrollView!
+    @IBOutlet weak var myScrollView: UIScrollView!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -19,7 +19,9 @@ class FirstViewController: UIViewController {
         textFieldButton.layer.borderWidth = 1
         textFieldButton.layer.borderColor = UIColor.gray.cgColor
         
-        let myImages = ["1.jpeg", "2.jpg", "3.jpg", "4.jpg"]
+        
+        
+        let myImages = ["1.jpeg", "2.jpg", "3.jpg", "4.png"]
         let imageWidth: CGFloat = 160
         let imageHeight: CGFloat = 100
         var xPosition:CGFloat = 0
@@ -30,33 +32,33 @@ class FirstViewController: UIViewController {
             let myImage:UIImage = UIImage(named: myImages[index])!
             let myImageView: UIImageView = UIImageView()
             myImageView.image = myImage
-            myImageView.contentMode = UIViewContentMode.scaleAspectFit
+            //myImageView.contentMode = UIViewContentMode.scaleAspectFit
             
             myImageView.frame.size.width = imageWidth
             myImageView.frame.size.height = imageHeight
-            myImageView.frame.origin.y = 10
-            myImageView.center = self.view.center
+            myImageView.frame.origin.y = 0
+            //myImageView.center = self.view.center
             myImageView.frame.origin.x = xPosition
             
-            dataView.addSubview(myImageView)
-            let spacer: CGFloat = 10
+            myScrollView.addSubview(myImageView)
+           let spacer: CGFloat = 20
+           
             
             xPosition+=imageWidth + spacer
             scrollViewContentSize+=imageWidth + spacer
             
-            dataView.contentSize = CGSize(width: scrollViewContentSize, height: imageHeight)
+            myScrollView.contentSize = CGSize(width: scrollViewContentSize, height: imageHeight)
         }
     }
 
+    @IBAction func buttonTapped(_ sender: Any?) {
+        performSegue(withIdentifier: "show", sender: self)
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
 
-    
-    @IBAction func t(_ sender: AnyObject) {
-    performSegue(withIdentifier: "show", sender: self)
-    }
 
 }
 
