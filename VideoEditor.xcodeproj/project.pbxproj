@@ -109,11 +109,11 @@
 			children = (
 				BFBB40141DD7BECB00DE4393 /* ViewController */,
 				BFBB3FE61DD7BEA900DE4393 /* AppDelegate.swift */,
+				BFBB3FEA1DD7BEA900DE4393 /* Main.storyboard */,
 				BFDA0B8E1DDA7D2A0091ED18 /* 1.jpeg */,
 				BFDA0B8D1DDA7D2A0091ED18 /* 2.jpg */,
 				BFDA0B851DDA7CFC0091ED18 /* 3.jpg */,
 				BFDA0B861DDA7CFC0091ED18 /* 4.png */,
-				BFBB3FEA1DD7BEA900DE4393 /* Main.storyboard */,
 				BFBB3FED1DD7BEA900DE4393 /* Assets.xcassets */,
 				BFBB3FEF1DD7BEA900DE4393 /* LaunchScreen.storyboard */,
 				BFBB3FF21DD7BEA900DE4393 /* Info.plist */,

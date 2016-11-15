@@ -36,8 +36,7 @@ class FirstViewController: UIViewController {
             
             myImageView.frame.size.width = imageWidth
             myImageView.frame.size.height = imageHeight
-            myImageView.frame.origin.y = 0
-            //myImageView.center = self.view.center
+            
             myImageView.frame.origin.x = xPosition
             
             myScrollView.addSubview(myImageView)
