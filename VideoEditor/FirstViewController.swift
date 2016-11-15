@@ -21,7 +21,7 @@ class FirstViewController: UIViewController {
         
         
         
-        let myImages = ["1.jpeg", "2.jpg", "3.jpg", "4.png"]
+        let myImages = ["1", "2", "3", "4"]
         let imageWidth: CGFloat = 160
         let imageHeight: CGFloat = 100
         var xPosition:CGFloat = 0

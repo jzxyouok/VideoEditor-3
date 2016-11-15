@@ -27,10 +27,10 @@ class SecondViewController: UIViewController, UITextFieldDelegate {
         
         
         
-        imageExample1.image = UIImage(named: "2.jpg")
-        imageExample2.image = UIImage(named: "1.jpeg")
-        imageExample3.image = UIImage(named: "3.jpg")
-        imageExample4.image = UIImage(named: "4.png")
+        imageExample1.image = UIImage(named: "2")
+        imageExample2.image = UIImage(named: "1")
+        imageExample3.image = UIImage(named: "3")
+        imageExample4.image = UIImage(named: "4")
     }
 
     override func didReceiveMemoryWarning() {
