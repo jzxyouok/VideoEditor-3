@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AADD718A1DDCDA8600488E56 /* IntroPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADD71891DDCDA8600488E56 /* IntroPageViewController.swift */; };
+		AADD718C1DDCDAA400488E56 /* InitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADD718B1DDCDAA400488E56 /* InitViewController.swift */; };
 		BFBB3FE71DD7BEA900DE4393 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBB3FE61DD7BEA900DE4393 /* AppDelegate.swift */; };
 		BFBB3FE91DD7BEA900DE4393 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBB3FE81DD7BEA900DE4393 /* FirstViewController.swift */; };
 		BFBB3FEC1DD7BEA900DE4393 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFBB3FEA1DD7BEA900DE4393 /* Main.storyboard */; };
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AADD71891DDCDA8600488E56 /* IntroPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroPageViewController.swift; sourceTree = "<group>"; };
+		AADD718B1DDCDAA400488E56 /* InitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitViewController.swift; sourceTree = "<group>"; };
 		BFBB3FE31DD7BEA900DE4393 /* VideoEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFBB3FE61DD7BEA900DE4393 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFBB3FE81DD7BEA900DE4393 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -131,6 +135,8 @@
 			isa = PBXGroup;
 			children = (
 				BFBB3FE81DD7BEA900DE4393 /* FirstViewController.swift */,
+				AADD718B1DDCDAA400488E56 /* InitViewController.swift */,
+				AADD71891DDCDA8600488E56 /* IntroPageViewController.swift */,
 				BFBB40151DD7BEFD00DE4393 /* SecondViewController.swift */,
 			);
 			name = ViewController;
@@ -271,7 +277,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AADD718A1DDCDA8600488E56 /* IntroPageViewController.swift in Sources */,
 				BFBB40161DD7BEFD00DE4393 /* SecondViewController.swift in Sources */,
+				AADD718C1DDCDAA400488E56 /* InitViewController.swift in Sources */,
 				BFBB3FE91DD7BEA900DE4393 /* FirstViewController.swift in Sources */,
 				BFBB3FE71DD7BEA900DE4393 /* AppDelegate.swift in Sources */,
 			);
