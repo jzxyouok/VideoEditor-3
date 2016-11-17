@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Pods-VideoEditor.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-VideoEditorTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-VideoEditorUITests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>paper-onboarding.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>3E3193721A44C4C484D12240927A38E6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>436DD5906B4E1B432C3F41AB48B014DF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>82F838FDF376E1E61738B63B2ACC016A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E7A6EE4FEB742FD799613B1386B07389</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
