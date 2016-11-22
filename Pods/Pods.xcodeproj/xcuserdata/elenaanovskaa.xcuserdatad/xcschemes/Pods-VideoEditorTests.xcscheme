@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0700"
+   LastUpgradeVersion = "0820"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3E3193721A44C4C484D12240927A38E6"
-               BuildableName = "Pods_VideoEditorUITests.framework"
-               BlueprintName = "Pods-VideoEditorUITests"
+               BlueprintIdentifier = "82F838FDF376E1E61738B63B2ACC016A"
+               BuildableName = "Pods_VideoEditorTests.framework"
+               BlueprintName = "Pods-VideoEditorTests"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3E3193721A44C4C484D12240927A38E6"
-            BuildableName = "Pods_VideoEditorUITests.framework"
-            BlueprintName = "Pods-VideoEditorUITests"
+            BlueprintIdentifier = "82F838FDF376E1E61738B63B2ACC016A"
+            BuildableName = "Pods_VideoEditorTests.framework"
+            BlueprintName = "Pods-VideoEditorTests"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -60,6 +60,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "82F838FDF376E1E61738B63B2ACC016A"
+            BuildableName = "Pods_VideoEditorTests.framework"
+            BlueprintName = "Pods-VideoEditorTests"
+            ReferencedContainer = "container:Pods.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

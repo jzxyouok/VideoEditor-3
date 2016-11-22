@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		66EB74253B4403DDCD628371 /* Pods_VideoEditor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C66DA7B1C42C854BAE86A635 /* Pods_VideoEditor.framework */; };
 		AADD718C1DDCDAA400488E56 /* InitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADD718B1DDCDAA400488E56 /* InitViewController.swift */; };
+		BF4C24541DE3C1A500C246C2 /* paper_onboarding.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF4C24531DE3C1A500C246C2 /* paper_onboarding.framework */; };
 		BFBB3FE71DD7BEA900DE4393 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBB3FE61DD7BEA900DE4393 /* AppDelegate.swift */; };
 		BFBB3FE91DD7BEA900DE4393 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBB3FE81DD7BEA900DE4393 /* FirstViewController.swift */; };
 		BFBB3FEC1DD7BEA900DE4393 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFBB3FEA1DD7BEA900DE4393 /* Main.storyboard */; };
@@ -47,6 +47,7 @@
 		97DBF629075C81C5BC2214F0 /* Pods_VideoEditorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VideoEditorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AADD718B1DDCDAA400488E56 /* InitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitViewController.swift; sourceTree = "<group>"; };
 		AF24BAB87BD13F64FEF1FE19 /* Pods-VideoEditorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoEditorTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VideoEditorTests/Pods-VideoEditorTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BF4C24531DE3C1A500C246C2 /* paper_onboarding.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = paper_onboarding.framework; path = "Pods/../build/Debug-iphoneos/paper-onboarding/paper_onboarding.framework"; sourceTree = "<group>"; };
 		BFBB3FE31DD7BEA900DE4393 /* VideoEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFBB3FE61DD7BEA900DE4393 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFBB3FE81DD7BEA900DE4393 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -70,7 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66EB74253B4403DDCD628371 /* Pods_VideoEditor.framework in Frameworks */,
+				BF4C24541DE3C1A500C246C2 /* paper_onboarding.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +97,7 @@
 		0A7402D101C5657DE6A1E474 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BF4C24531DE3C1A500C246C2 /* paper_onboarding.framework */,
 				C66DA7B1C42C854BAE86A635 /* Pods_VideoEditor.framework */,
 				97DBF629075C81C5BC2214F0 /* Pods_VideoEditorTests.framework */,
 				E207D4865489054C9B1F5454 /* Pods_VideoEditorUITests.framework */,
@@ -256,7 +258,7 @@
 				TargetAttributes = {
 					BFBB3FE21DD7BEA900DE4393 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = FKNLQ46HWC;
+						DevelopmentTeam = JHLX4XGDFC;
 						ProvisioningStyle = Automatic;
 					};
 					BFBB3FF61DD7BEAA00DE4393 = {
@@ -617,7 +619,11 @@
 			baseConfigurationReference = 7265F89F443A800C8FE9FCE3 /* Pods-VideoEditor.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = FKNLQ46HWC;
+				DEVELOPMENT_TEAM = JHLX4XGDFC;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/paper-onboarding",
+				);
 				INFOPLIST_FILE = VideoEditor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = yanovski.VideoEditor;
@@ -631,7 +637,11 @@
 			baseConfigurationReference = 508DE986AEE2B528720A1A69 /* Pods-VideoEditor.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = FKNLQ46HWC;
+				DEVELOPMENT_TEAM = JHLX4XGDFC;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/paper-onboarding",
+				);
 				INFOPLIST_FILE = VideoEditor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = yanovski.VideoEditor;
