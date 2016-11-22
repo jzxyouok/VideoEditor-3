@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class StartViewController: UIViewController {
 
     @IBOutlet weak var textFieldButton: UIButton!
     @IBOutlet weak var myScrollView: UIScrollView!
@@ -48,6 +48,10 @@ class FirstViewController: UIViewController {
             
             myScrollView.contentSize = CGSize(width: scrollViewContentSize, height: imageHeight)
         }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.isNavigationBarHidden = true
     }
 
     @IBAction func buttonTapped(_ sender: Any?) {

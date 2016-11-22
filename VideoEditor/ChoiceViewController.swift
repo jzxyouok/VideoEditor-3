@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SecondViewController: UIViewController, UITextFieldDelegate {
+class ChoiceViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var textField: UITextField!
     
@@ -31,6 +31,10 @@ class SecondViewController: UIViewController, UITextFieldDelegate {
         imageExample2.image = UIImage(named: "1")
         imageExample3.image = UIImage(named: "3")
         imageExample4.image = UIImage(named: "4")
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.isNavigationBarHidden = false
     }
 
     override func didReceiveMemoryWarning() {
