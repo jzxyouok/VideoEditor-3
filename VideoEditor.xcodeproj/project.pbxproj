@@ -11,6 +11,7 @@
 		BF4C24541DE3C1A500C246C2 /* paper_onboarding.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF4C24531DE3C1A500C246C2 /* paper_onboarding.framework */; };
 		BF4C24561DE3D2D600C246C2 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4C24551DE3D2D600C246C2 /* SettingsViewController.swift */; };
 		BF4C24581DE3D32800C246C2 /* ViewAllController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4C24571DE3D32800C246C2 /* ViewAllController.swift */; };
+		BF9614981DF47D5000E5FC2C /* ScrollImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9614971DF47D5000E5FC2C /* ScrollImageView.swift */; };
 		BFBB3FE71DD7BEA900DE4393 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBB3FE61DD7BEA900DE4393 /* AppDelegate.swift */; };
 		BFBB3FE91DD7BEA900DE4393 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBB3FE81DD7BEA900DE4393 /* StartViewController.swift */; };
 		BFBB3FEC1DD7BEA900DE4393 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFBB3FEA1DD7BEA900DE4393 /* Main.storyboard */; };
@@ -52,6 +53,7 @@
 		BF4C24531DE3C1A500C246C2 /* paper_onboarding.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = paper_onboarding.framework; path = "Pods/../build/Debug-iphoneos/paper-onboarding/paper_onboarding.framework"; sourceTree = "<group>"; };
 		BF4C24551DE3D2D600C246C2 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		BF4C24571DE3D32800C246C2 /* ViewAllController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewAllController.swift; sourceTree = "<group>"; };
+		BF9614971DF47D5000E5FC2C /* ScrollImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollImageView.swift; sourceTree = "<group>"; };
 		BFBB3FE31DD7BEA900DE4393 /* VideoEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFBB3FE61DD7BEA900DE4393 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFBB3FE81DD7BEA900DE4393 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
@@ -183,6 +185,7 @@
 				BF4C24551DE3D2D600C246C2 /* SettingsViewController.swift */,
 				BFBB40151DD7BEFD00DE4393 /* ChoiceViewController.swift */,
 				BF4C24571DE3D32800C246C2 /* ViewAllController.swift */,
+				BF9614971DF47D5000E5FC2C /* ScrollImageView.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -474,6 +477,7 @@
 				BF4C24581DE3D32800C246C2 /* ViewAllController.swift in Sources */,
 				BFBB3FE91DD7BEA900DE4393 /* StartViewController.swift in Sources */,
 				BF4C24561DE3D2D600C246C2 /* SettingsViewController.swift in Sources */,
+				BF9614981DF47D5000E5FC2C /* ScrollImageView.swift in Sources */,
 				BFBB3FE71DD7BEA900DE4393 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
