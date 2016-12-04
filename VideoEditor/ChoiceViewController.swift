@@ -17,20 +17,23 @@ class ChoiceViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var imageExample3: UIImageView!
     @IBOutlet weak var imageExample4: UIImageView!
     
-    
+    var myImages : [UIImage] = [
+        UIImage(named: "1")!,
+        UIImage(named: "2")!,
+        UIImage(named: "3")!,
+        UIImage(named: "4")!]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         textField.delegate = self
         textField.becomeFirstResponder()
         
         
-        
-        imageExample1.image = UIImage(named: "2")
-        imageExample2.image = UIImage(named: "1")
-        imageExample3.image = UIImage(named: "3")
-        imageExample4.image = UIImage(named: "4")
+        imageExample2.image = myImages[0]
+        imageExample1.image = myImages[1]
+        imageExample3.image = myImages[1]
+        imageExample4.image = myImages[1]
     }
     
     override func viewWillAppear(_ animated: Bool) {
