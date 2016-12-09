@@ -60,13 +60,14 @@ class StartViewController: UIViewController {
             xPosition+=imageWidth + spacer
             scrollViewContentSize+=imageWidth + spacer
 
-            myScrollView.contentSize = CGSize(width: scrollViewContentSize, height: imageHeight)
+            myScrollView.contentSize = CGSize(width: scrollViewContentSize - spacer, height: imageHeight)
         }
 
     }
 
     var scrollViewContentSize : CGFloat = 720
-    func addToScroll (button: UIButton /*var scrollViewContentSize: scrollViewContentSize*/) {
+    var xPosition : CGFloat = 540
+    func addToScroll (button: UIButton) {
         
         let imageWidth : CGFloat = 160
         let imageHeight :CGFloat = 100
@@ -74,15 +75,15 @@ class StartViewController: UIViewController {
         let spacer :CGFloat = 20
 
         scrollViewContentSize += imageWidth + spacer
-
+xPosition += imageWidth + spacer
         myImages.insert(UIImage(named: "2.jpeg")!, at: 0)
         let imageViewToAdd = UIImageView(image: myImages[0])
-        imageViewToAdd.frame = CGRect(x: 720, y: 0, width: imageWidth, height: imageHeight)
+        imageViewToAdd.frame = CGRect(x: xPosition, y: 0, width: imageWidth, height: imageHeight)
         self.myScrollView.addSubview(imageViewToAdd)
-        self.myScrollView.contentSize = CGSize(width: scrollViewContentSize, height: imageHeight)
-        //self.myScrollView.addSubview(UIImage (named: myImageView[myImageView.count]))
+        self.myScrollView.contentSize = CGSize(width: scrollViewContentSize - spacer, height: imageHeight)
+
         print("it tapped")
-        print(myImages[0], myImages[1], myImages.count)
+        //print(myImages[0], myImages[1], myImages.count)
 
     }
 
