@@ -83,7 +83,7 @@ xPosition += imageWidth + spacer
         self.myScrollView.contentSize = CGSize(width: scrollViewContentSize - spacer, height: imageHeight)
 
         print("it tapped")
-        //print(myImages[0], myImages[1], myImages.count)
+        print(myImages[0], myImages[1], myImages.count)
 
     }
 
