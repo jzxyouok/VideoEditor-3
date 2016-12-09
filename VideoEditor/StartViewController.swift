@@ -65,20 +65,19 @@ class StartViewController: UIViewController {
 
     }
 
-        var scrollViewContentSize = 160*4
+    var scrollViewContentSize : CGFloat = 720
     func addToScroll (button: UIButton /*var scrollViewContentSize: scrollViewContentSize*/) {
         
-let imageWidth = 160
-        let imageHeight = 100
+        let imageWidth : CGFloat = 160
+        let imageHeight :CGFloat = 100
 
-        let spacer = 20
-        var scrollViewContentSize = 160*4
+        let spacer :CGFloat = 20
 
         scrollViewContentSize += imageWidth + spacer
 
         myImages.insert(UIImage(named: "2.jpeg")!, at: 0)
         let imageViewToAdd = UIImageView(image: myImages[0])
-        imageViewToAdd.frame = CGRect(x: 640, y: 0, width: imageWidth, height: imageHeight)
+        imageViewToAdd.frame = CGRect(x: 720, y: 0, width: imageWidth, height: imageHeight)
         self.myScrollView.addSubview(imageViewToAdd)
         self.myScrollView.contentSize = CGSize(width: scrollViewContentSize, height: imageHeight)
         //self.myScrollView.addSubview(UIImage (named: myImageView[myImageView.count]))
