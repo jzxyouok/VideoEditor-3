@@ -75,16 +75,20 @@ class StartViewController: UIViewController {
         let spacer :CGFloat = 20
 
         scrollViewContentSize += imageWidth + spacer
-xPosition += imageWidth + spacer
-        myImages.insert(UIImage(named: "2.jpeg")!, at: 0)
-        let imageViewToAdd = UIImageView(image: myImages[0])
-        imageViewToAdd.frame = CGRect(x: xPosition, y: 0, width: imageWidth, height: imageHeight)
+        xPosition += imageWidth + spacer
+        
+        let imageViewToAdd : UIImageView = ScrollImageView(frame: CGRect(x: xPosition, y: 0, width: imageWidth, height: imageHeight))
+
+        imageViewToAdd.image = myImages[0]
+        myImages.insert(UIImage(named: "1.jpeg")!, at: 0)
+        imageViewToAdd.isUserInteractionEnabled = true
+
         self.myScrollView.addSubview(imageViewToAdd)
         self.myScrollView.contentSize = CGSize(width: scrollViewContentSize - spacer, height: imageHeight)
 
         print("it tapped")
         print(myImages[0], myImages[1], myImages.count)
-
+        
     }
 
     override func viewWillAppear(_ animated: Bool) {
