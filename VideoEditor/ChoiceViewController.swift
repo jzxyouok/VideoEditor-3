@@ -8,32 +8,25 @@
 
 import UIKit
 
-class ChoiceViewController: UIViewController, UITextFieldDelegate {
+class ChoiceViewController: UIViewController, UITextFieldDelegate, UITableViewDelegate, UITableViewDataSource {
 
+    
     @IBOutlet weak var textField: UITextField!
     
-    @IBOutlet weak var imageExample1: UIImageView!
-    @IBOutlet weak var imageExample2: UIImageView!
-    @IBOutlet weak var imageExample3: UIImageView!
-    @IBOutlet weak var imageExample4: UIImageView!
+
     
     var myImages : [UIImage] = [
-        UIImage(named: "1")!,
-        UIImage(named: "2")!,
-        UIImage(named: "3")!,
-        UIImage(named: "4")!]
+        UIImage(named: "1.jpeg")!,
+        UIImage(named: "2.jpg")!,
+        UIImage(named: "3.jpg")!,
+        UIImage(named: "4.png")!]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         textField.delegate = self
         textField.becomeFirstResponder()
-        
-        
-        imageExample2.image = myImages[0]
-        imageExample1.image = myImages[1]
-        imageExample3.image = myImages[1]
-        imageExample4.image = myImages[1]
+
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -49,14 +42,26 @@ class ChoiceViewController: UIViewController, UITextFieldDelegate {
         self.view.endEditing(true)
         return false
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 4
     }
-    */
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CustomCell
+        cell.picture.image = myImages[indexPath.row]
+        return cell
+    }
 
+}
+
+class CustomCell: UITableViewCell {
+    @IBOutlet weak var picture: UIImageView!
+    override func awakeFromNib() {
+        super.awakeFromNib()
+    }
+    
+    override func setSelected(_ selected: Bool, animated: Bool) {
+    super.setSelected(selected, animated: animated)
+}
 }
