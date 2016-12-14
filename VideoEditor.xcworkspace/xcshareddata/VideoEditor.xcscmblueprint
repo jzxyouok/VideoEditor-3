@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "2320FF3AA4CB92237884B8B2317DE7D3A3C047F7",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "2320FF3AA4CB92237884B8B2317DE7D3A3C047F7" : 9223372036854775807,
+    "9C73CFCFDBFB5F365BAB33DD1496358B04AE618D" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "DC8966FE-3355-4B91-AD28-F194F3BE0D6F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "2320FF3AA4CB92237884B8B2317DE7D3A3C047F7" : "VideoEditor\/",
+    "9C73CFCFDBFB5F365BAB33DD1496358B04AE618D" : ".."
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "VideoEditor",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "VideoEditor.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/yanovskaya\/VideoEditor.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "2320FF3AA4CB92237884B8B2317DE7D3A3C047F7"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/yanovskaya\/....git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "9C73CFCFDBFB5F365BAB33DD1496358B04AE618D"
+    }
+  ]
+}
