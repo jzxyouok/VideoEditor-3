@@ -46,7 +46,7 @@ class StartViewController: UIViewController {
                 for index in 0 ..< myImages.count
         {
             let b1 = UIButton (frame: CGRect(x: xPosition, y: 0, width: imageWidth, height: imageHeight))
-        b1.addTarget(self, action: #selector(toPrevEdit(b1:b5:)), for: .touchDown)
+        b1.addTarget(self, action: #selector(toPrevEdit(b1:)), for: .touchDown)
 
             let image: UIImage? = myImages[index]
             myImageView.append(ScrollImageView(frame: CGRect(x: xPosition, y: 0, width: imageWidth, height: imageHeight)))
@@ -73,7 +73,7 @@ self.myScrollView.addSubview(b1)
     var scrollViewContentSize : CGFloat = 720
     var xPosition : CGFloat = 540
     //?????
-    func toPrevEdit (b1 : UIButton, b5: UIButton) {
+    func toPrevEdit (b1 : UIButton) {
         performSegue(withIdentifier: "toPreviousEdit", sender: self)
     }
     func addToScroll (button: UIButton) {
@@ -95,11 +95,11 @@ self.myScrollView.addSubview(b1)
 
         self.myScrollView.addSubview(imageViewToAdd)
         self.myScrollView.contentSize = CGSize(width: scrollViewContentSize - spacer, height: imageHeight)
-        let b5 = UIButton (frame: CGRect(x: xPosition, y: 0, width: imageWidth, height: imageHeight))
-        b5.addTarget(self, action: #selector(toPrevEdit(b1:b5:)), for: .touchDown)
+        let b1 = UIButton (frame: CGRect(x: xPosition, y: 0, width: imageWidth, height: imageHeight))
+        b1.addTarget(self, action: #selector(toPrevEdit(b1:)), for: .touchDown)
         
 
-        self.myScrollView.addSubview(b5)
+        self.myScrollView.addSubview(b1)
         print("it tapped")
         print(myImages[0], myImages[1], myImages.count)
         
