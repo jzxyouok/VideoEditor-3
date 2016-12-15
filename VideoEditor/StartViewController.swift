@@ -29,7 +29,7 @@ class StartViewController: UIViewController {
         
         button.backgroundColor = UIColor.green
         button.setTitle("+", for: .normal)
-        button.addTarget(self, action: #selector(addToScroll(button:)), for: .touchDown)
+        button.addTarget(self, action: #selector(addToScroll(button:)), for: .touchUpInside)
         view.addSubview(button)
 
                 textFieldButton.layer.cornerRadius = 2
@@ -46,7 +46,7 @@ class StartViewController: UIViewController {
                 for index in 0 ..< myImages.count
         {
             let b1 = UIButton (frame: CGRect(x: xPosition, y: 0, width: imageWidth, height: imageHeight))
-        b1.addTarget(self, action: #selector(toPrevEdit(b1:)), for: .touchDown)
+        b1.addTarget(self, action: #selector(toPrevEdit(b1:)), for: .touchUpInside)
 
             let image: UIImage? = myImages[index]
             myImageView.append(ScrollImageView(frame: CGRect(x: xPosition, y: 0, width: imageWidth, height: imageHeight)))
@@ -96,7 +96,7 @@ self.myScrollView.addSubview(b1)
         self.myScrollView.addSubview(imageViewToAdd)
         self.myScrollView.contentSize = CGSize(width: scrollViewContentSize - spacer, height: imageHeight)
         let b1 = UIButton (frame: CGRect(x: xPosition, y: 0, width: imageWidth, height: imageHeight))
-        b1.addTarget(self, action: #selector(toPrevEdit(b1:)), for: .touchDown)
+        b1.addTarget(self, action: #selector(toPrevEdit(b1:)), for: .touchUpInside)
         
 
         self.myScrollView.addSubview(b1)
