@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -216,8 +217,33 @@
                     <view key="view" contentMode="scaleToFill" id="zhp-jP-bdv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sP1-cP-7aI">
+                                <rect key="frame" x="0.0" y="269" width="375" height="398"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kRg-wt-ove">
+                                <rect key="frame" x="16" y="86" width="343" height="163"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="kRg-wt-ove" secondAttribute="height" multiplier="343:163" id="hEg-Xy-cJq"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kRg-wt-ove" firstAttribute="trailing" secondItem="zhp-jP-bdv" secondAttribute="trailingMargin" id="ADR-HQ-S9n"/>
+                            <constraint firstItem="sP1-cP-7aI" firstAttribute="leading" secondItem="zhp-jP-bdv" secondAttribute="leading" id="Hh0-Fw-sX6"/>
+                            <constraint firstItem="sP1-cP-7aI" firstAttribute="bottom" secondItem="Zd6-YH-sAp" secondAttribute="top" id="KPk-GJ-Vj8"/>
+                            <constraint firstItem="kRg-wt-ove" firstAttribute="centerX" secondItem="sP1-cP-7aI" secondAttribute="centerX" id="VFr-no-wOC"/>
+                            <constraint firstItem="sP1-cP-7aI" firstAttribute="top" secondItem="kRg-wt-ove" secondAttribute="bottom" constant="20" id="WeY-Bw-2gK"/>
+                            <constraint firstItem="kRg-wt-ove" firstAttribute="top" secondItem="JuT-uB-W1D" secondAttribute="bottom" constant="22" id="bnL-vh-QP9"/>
+                            <constraint firstItem="kRg-wt-ove" firstAttribute="leading" secondItem="zhp-jP-bdv" secondAttribute="leadingMargin" id="hv2-TE-gqH"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="allThemeExamples" destination="sP1-cP-7aI" id="j6h-c5-qGO"/>
+                        <outlet property="previewImage" destination="kRg-wt-ove" id="xaf-cC-yVD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fww-Yx-Z1U" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

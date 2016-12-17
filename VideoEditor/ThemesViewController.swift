@@ -11,6 +11,8 @@ import UIKit
 
 class ThemesViewController: UIViewController {
 
+    @IBOutlet weak var previewImage: UIImageView!
+    @IBOutlet weak var allThemeExamples: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
