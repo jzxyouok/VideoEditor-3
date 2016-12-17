@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		AADD718C1DDCDAA400488E56 /* InitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADD718B1DDCDAA400488E56 /* InitViewController.swift */; };
 		BF1206771E0587330069BE71 /* PreviousViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1206761E0587330069BE71 /* PreviousViewController.swift */; };
+		BF12068A1E05A7BA0069BE71 /* ThemesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1206891E05A7BA0069BE71 /* ThemesViewController.swift */; };
 		BF4C24541DE3C1A500C246C2 /* paper_onboarding.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF4C24531DE3C1A500C246C2 /* paper_onboarding.framework */; };
-		BF4C24561DE3D2D600C246C2 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4C24551DE3D2D600C246C2 /* SettingsViewController.swift */; };
 		BF4C24581DE3D32800C246C2 /* ViewAllController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4C24571DE3D32800C246C2 /* ViewAllController.swift */; };
 		BF9614981DF47D5000E5FC2C /* ScrollImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9614971DF47D5000E5FC2C /* ScrollImageView.swift */; };
 		BFBB3FE71DD7BEA900DE4393 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBB3FE61DD7BEA900DE4393 /* AppDelegate.swift */; };
@@ -52,8 +52,8 @@
 		AADD718B1DDCDAA400488E56 /* InitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitViewController.swift; sourceTree = "<group>"; };
 		AF24BAB87BD13F64FEF1FE19 /* Pods-VideoEditorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoEditorTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VideoEditorTests/Pods-VideoEditorTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BF1206761E0587330069BE71 /* PreviousViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviousViewController.swift; sourceTree = "<group>"; };
+		BF1206891E05A7BA0069BE71 /* ThemesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemesViewController.swift; sourceTree = "<group>"; };
 		BF4C24531DE3C1A500C246C2 /* paper_onboarding.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = paper_onboarding.framework; path = "Pods/../build/Debug-iphoneos/paper-onboarding/paper_onboarding.framework"; sourceTree = "<group>"; };
-		BF4C24551DE3D2D600C246C2 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		BF4C24571DE3D32800C246C2 /* ViewAllController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewAllController.swift; sourceTree = "<group>"; };
 		BF9614971DF47D5000E5FC2C /* ScrollImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollImageView.swift; sourceTree = "<group>"; };
 		BFBB3FE31DD7BEA900DE4393 /* VideoEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -182,9 +182,9 @@
 		BFBB40141DD7BECB00DE4393 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				BF1206891E05A7BA0069BE71 /* ThemesViewController.swift */,
 				BFBB3FE81DD7BEA900DE4393 /* StartViewController.swift */,
 				AADD718B1DDCDAA400488E56 /* InitViewController.swift */,
-				BF4C24551DE3D2D600C246C2 /* SettingsViewController.swift */,
 				BFBB40151DD7BEFD00DE4393 /* ChoiceViewController.swift */,
 				BF4C24571DE3D32800C246C2 /* ViewAllController.swift */,
 				BF9614971DF47D5000E5FC2C /* ScrollImageView.swift */,
@@ -477,10 +477,10 @@
 			files = (
 				BFBB40161DD7BEFD00DE4393 /* ChoiceViewController.swift in Sources */,
 				AADD718C1DDCDAA400488E56 /* InitViewController.swift in Sources */,
+				BF12068A1E05A7BA0069BE71 /* ThemesViewController.swift in Sources */,
 				BF4C24581DE3D32800C246C2 /* ViewAllController.swift in Sources */,
 				BFBB3FE91DD7BEA900DE4393 /* StartViewController.swift in Sources */,
 				BF1206771E0587330069BE71 /* PreviousViewController.swift in Sources */,
-				BF4C24561DE3D2D600C246C2 /* SettingsViewController.swift in Sources */,
 				BF9614981DF47D5000E5FC2C /* ScrollImageView.swift in Sources */,
 				BFBB3FE71DD7BEA900DE4393 /* AppDelegate.swift in Sources */,
 			);
